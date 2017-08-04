@@ -1,0 +1,25 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="dim5">5dp</dimen>
+    <dimen name="dim8">8dp</dimen>
+    <dimen name="dim10">10dp</dimen>
+    <dimen name="dim12">12dp</dimen>
+    <dimen name="dim15">15dp</dimen>
+    <dimen name="dim20">20dp</dimen>
+    <dimen name="dim30">30dp</dimen>
+    <dimen name="dim50">50dp</dimen>
+    <dimen name="dim150">150dp</dimen>
+    <dimen name="dim200">200dp</dimen>
+    <dimen name="dim250">250dp</dimen>
+    <dimen name="dim350">350dp</dimen>
+    <dimen name="splash_txt">24sp</dimen>
+    <dimen name="alert_width">280dp</dimen>
+    <dimen name="text_size">16sp</dimen>
+    <dimen name="text_size_large">22sp</dimen>
+    <dimen name="dim100">100dp</dimen>
+    <dimen name="dim35">35dp</dimen>
+    <dimen name="dim170">170dp</dimen>
+    <dimen name="dim70">70dp</dimen>
+</resources>

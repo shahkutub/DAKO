@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F8"
+        >
+
+        <RelativeLayout
+            android:id="@+id/camView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:background="#FFE8CE"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUser"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/cercle"
+                />
+            <ImageView
+                android:id="@+id/imgCam"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/camera"
+                android:layout_toRightOf="@+id/imgUser"
+                android:layout_marginTop="60dp"
+
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:background="#FEE7D4"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_below="@+id/camView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#fff"
+                android:gravity="center|left"
+                android:hint="Name"
+                android:inputType="phone"
+                android:padding="5dp"
+                android:textColor="#000"
+                android:textColorHint="#98918F" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#fff"
+                >
+                <EditText
+                    android:id="@+id/etNearPoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#fff"
+                    android:hint="Which point you near"
+                    android:textColorHint="#98918F"
+                    android:inputType="phone"
+                    android:gravity="left|center"
+                    android:textColor="#000"
+                    android:padding="5dp"
+                    />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@mipmap/ic_near_place"
+                    android:layout_height="15dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000"
+                    android:layout_below="@+id/etNearPoint"
+                    android:layout_marginBottom="5dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvSaveBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:text="Save"
+                    android:background="@drawable/save_box"
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgFbBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/fbicon"
+                    android:layout_below="@+id/tvSaveBtn"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="5dp"
+
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
