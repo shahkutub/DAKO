@@ -19,8 +19,10 @@ import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
+import android.text.Editable;
 import android.text.Html;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MenuItem;
@@ -140,20 +142,40 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         etPicUp =(AutoCompleteTextView)findViewById(R.id.etPicUp);
         etDestination = (AutoCompleteTextView)findViewById(R.id.etDestination);
 
-        etPicUp.setOnClickListener(new View.OnClickListener() {
+        etPicUp.addTextChangedListener(new TextWatcher() {
+
             @Override
-            public void onClick(View v) {
-                isPicUp = true;
-                isPicUp = false;
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
             }
         });
 
 
-        etPicUp.setOnClickListener(new View.OnClickListener() {
+        etPicUp.addTextChangedListener(new TextWatcher() {
+
             @Override
-            public void onClick(View v) {
-                isPicUp = false;
-                isPicUp = true;
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
             }
         });
 
@@ -192,16 +214,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         picPlace = etPicUp.getText().toString();
         desPlace = etDestination.getText().toString();
 
-
-        etDestination.setOnKeyListener(new View.OnKeyListener() {
-
-            @Override
-            public boolean onKey(View arg0, int arg1, KeyEvent arg2) {
-                // TODO Auto-generated method stub
-
-                return false;
-            }
-        });
 
     }
 

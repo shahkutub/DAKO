@@ -23,6 +23,10 @@
     <string name="your_location">Your Location</string>
     <string name="destination">Destination</string>
     <string name="where_will_you_go">Where will you go?</string>
+    <string name="invite_friend">INVITE \nFRIEND</string>
+    <string name="get_discount">GET \nDISCOUNT</string>
+    <string name="want_help">WANT \nHELP</string>
+    <string name="request_a_car">Request a CAR</string>
 
 
 </resources>
