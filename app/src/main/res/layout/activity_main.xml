@@ -7,40 +7,7 @@
 
 
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dim50"
-        android:background="@color/colorWhite"
-        android:elevation="0dp"
-        android:minHeight="?attr/actionBarSize">
 
-        <RelativeLayout
-            android:id="@+id/mainHead"
-            android:layout_width="match_parent"
-            android:gravity="center_vertical"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-
-                android:layout_centerInParent="true"
-                android:src="@drawable/logowh" />
-
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:adjustViewBounds="true"
-                android:scaleType="centerInside"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="@dimen/dim10"
-                android:src="@drawable/notifucation" />
-
-        </RelativeLayout>
-
-    </android.support.v7.widget.Toolbar>
 
 
 
@@ -48,7 +15,8 @@
         android:id="@+id/drawerLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/toolbar">
+
+        >
 
         <FrameLayout
             android:id="@+id/containerView"
@@ -72,7 +40,7 @@
             android:orientation="vertical"
             android:paddingLeft="@dimen/dim20"
             android:paddingRight="@dimen/dim20"
-            android:layout_marginTop="@dimen/dim10"
+            android:layout_marginTop="60dp"
             >
 
             <LinearLayout
@@ -102,6 +70,7 @@
                         android:textColorHint="@color/colorBlack"
                         android:background="@color/colorWhite"
                         android:singleLine="true"
+                        android:focusable="false"
                         android:layout_toLeftOf="@+id/imgSp"
                         android:textColor="@color/colorBlack"
                         />
@@ -143,6 +112,7 @@
                         android:background="@color/colorWhite"
                         android:textColorHint="@color/colorBlack"
                         android:singleLine="true"
+                        android:focusable="false"
                         android:textColor="@color/colorBlack"
                         android:layout_alignParentLeft="true"
                         android:layout_toLeftOf="@+id/imgDs"
@@ -168,6 +138,19 @@
                     />
 
             </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvEstimate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDako"
+                android:textColor="@color/colorWhite"
+                android:padding="@dimen/dim5"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim10"
+                />
 
         </LinearLayout>
 
@@ -434,4 +417,63 @@
     </android.support.v4.widget.DrawerLayout>
 
 
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim50"
+        android:background="@color/colorTransparent"
+        android:layout_alignParentTop="true"
+        android:elevation="0dp"
+        android:minHeight="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:id="@+id/mainHead"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:src="@drawable/logowh" />
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dim10"
+                android:src="@drawable/notifucation" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imgDestination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:src="@drawable/dropoff" />
+    <TextView
+        android:id="@+id/tvDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDako"
+        android:textColor="@color/colorWhite"
+        android:padding="@dimen/dim10"
+        android:layout_margin="@dimen/dim10"
+        android:visibility="gone"
+        android:gravity="center"
+        android:text="@string/done"
+        android:layout_alignParentBottom="true"
+        />
 </RelativeLayout>

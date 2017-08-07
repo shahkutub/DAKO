@@ -9,6 +9,12 @@
     android:background="@color/colorWhite"
 >
 
+    <ImageView
+        android:layout_width="@dimen/dim170"
+        android:layout_height="@dimen/dim100"
+        android:src="@drawable/logodako"
+        />
+
     <Button
         android:id="@+id/btnSms"
         android:layout_width="match_parent"

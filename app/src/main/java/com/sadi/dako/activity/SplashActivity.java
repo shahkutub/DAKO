@@ -44,7 +44,7 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     private void startApp() {
-        Intent intent = new Intent(SplashActivity.this, MapsActivity.class);
+        Intent intent = new Intent(SplashActivity.this, FbLoginActivity.class);
         startActivity(intent);
     }
 }

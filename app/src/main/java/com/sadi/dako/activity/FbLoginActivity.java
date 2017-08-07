@@ -81,7 +81,7 @@ public class FbLoginActivity extends AppCompatActivity {
             } else {
                 if (loginResult.getAccessToken() != null) {
                     toastMessage = "Success:" + loginResult.getAccessToken().getAccountId();
-                    startActivity(new Intent(con,UserActivity.class));
+
                 } else {
                     toastMessage = String.format(
                             "Success:%s...",
@@ -97,9 +97,10 @@ public class FbLoginActivity extends AppCompatActivity {
             }
 
             // Surface the result to your user in an appropriate way.
+            startActivity(new Intent(con,UserActivity.class));
+            finish();
             Toast.makeText(this, toastMessage, Toast.LENGTH_LONG).show();
         }
     }
-
 
 }

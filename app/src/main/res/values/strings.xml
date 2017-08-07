@@ -27,6 +27,7 @@
     <string name="get_discount">GET \nDISCOUNT</string>
     <string name="want_help">WANT \nHELP</string>
     <string name="request_a_car">Request a CAR</string>
+    <string name="done">DONE</string>
 
 
 </resources>

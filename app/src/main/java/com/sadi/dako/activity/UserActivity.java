@@ -23,6 +23,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.sadi.dako.R;
 import com.sadi.dako.utils.AppConstant;
@@ -48,6 +49,8 @@ public class UserActivity extends AppCompatActivity {
     public final int imagecaptureid = 0;
     public final int galarytakid = 1;
 
+    private TextView tvSaveBtn;
+
     Dialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +64,16 @@ public class UserActivity extends AppCompatActivity {
     private void initialize() {
         imgUser = (CircleImageView) findViewById(R.id.imgUser);
         imgCam = (ImageView)findViewById(R.id.imgCam);
+
+        tvSaveBtn = (TextView)findViewById(R.id.tvSaveBtn);
+
+        tvSaveBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               startActivity(new Intent(con,RequestActivity.class));
+                finish();
+            }
+        });
 
         imgCam.setOnClickListener(new View.OnClickListener() {
             @Override
